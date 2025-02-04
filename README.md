@@ -1,7 +1,7 @@
 # LoveBabbar DSA Sheet Solutions
 
 ## Objective:
-This repository contains my solutions to the Love Babbar DSA Sheet, covering 450 essential Data Structures and Algorithms problems. I aim to solve and commit solutions daily while improving my problem-solving skills. Each solution is structured, optimized, and well-documented for better understanding. <br />
+This repository contains my solutions to the Love Babbar DSA Sheet, covering 450 essential Data Structures and Algorithms problems. I aim to solve and commit solutions daily while improving my problem-solving skills. Each solution is structured, optimized, and well-documented for better understanding. <br /> <br />
 
 
 
@@ -9,7 +9,7 @@ This repository contains my solutions to the Love Babbar DSA Sheet, covering 450
 This repository contains solutions implemented in:  
 ✅ C#  
 ✅ C++ (optional)
-<br />
+<br />  <br />
 
 
 
@@ -28,6 +28,7 @@ This repository contains solutions implemented in:
 - [ ] Greedy Algorithms  
 - [ ] Heaps & Hashing
 <br />
+
 
 
 
