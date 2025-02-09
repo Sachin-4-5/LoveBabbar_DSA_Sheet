@@ -22,40 +22,40 @@ f(6) = 8. 3 * 8 - 5 * 5 = -1
 using System;
 namespace Demo
 {
-	class Program
+    class Program
+    {
+        //Nth fibonacci number 
+	public int fib(int n)
 	{
-		//Nth fibonacci number 
-		public int fib(int n)
-		{
-			int first = 1;
-			int second = 1;
-			int curr = 0;
+	    int first = 1;
+	    int second = 1;
+	    int curr = 0;
 			
-			if(n==1 || n==2)
-				return 1;
+	    if(n==1 || n==2)
+	        return 1;
 			
-			while(n > 2)
-			{
-				curr = first + second;
-				first = second;
-				second = curr;
-				n--;
-			}
-			return curr;
-		}
-		
-		public static int evaluate_exp(int n)
-		{
-			return (fib(n-1) * fib(n+1)) - (fib(n)*fib(n));
-		}
-		
-		public static void Main(string[] args)
-		{
-			int num = Convert.ToInt32(Console.Readline());
-			int ans = evaluate_exp(num);
-			Console.WriteLine(ans);
-		}
+	    while(n > 2)
+	    {
+	        curr = first + second;
+		first = second;
+		second = curr;
+		n--;
+	    }
+	    return curr;
 	}
+		
+	public static int evaluate_exp(int n)
+	{
+	    return (fib(n-1) * fib(n+1)) - (fib(n)*fib(n));
+	}
+		
+	public static void Main(string[] args)
+	{
+	    int num = Convert.ToInt32(Console.Readline());
+	    int ans = evaluate_exp(num);
+	    Console.WriteLine(ans);
+	}
+    }
 }
 
 
@@ -68,11 +68,12 @@ namespace Demo
 using System;
 namespace Demo
 {
-	class Program
+    class Program
+    {
+        public class int evaluate_exp(int n)
 	{
-		public class int evaluate_exp(int n)
-		{
-			return Convert.ToInt32(Math.Pow(-1, n));
-		}
+	    return Convert.ToInt32(Math.Pow(-1, n));
 	}
+    }
 }
+
