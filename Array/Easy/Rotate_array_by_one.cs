@@ -62,15 +62,15 @@ class Solution
     void rotate(vector<int> &arr) 
     {
         int n = arr.size();
-		int lastElement = arr[n-1];
-		int temp = arr[0];
-		for (int i=0; i<n-1; i++)
-		{
-			int temp1 = arr[i+1];
-			arr[i+1] = temp;
-			temp = temp1;
-		}
-		arr[0] = lastElement;
+	int lastElement = arr[n-1];
+	int temp = arr[0];
+	for (int i=0; i<n-1; i++)
+	{
+	    int temp1 = arr[i+1];
+	    arr[i+1] = temp;
+  	    temp = temp1;
+	}
+	arr[0] = lastElement;
     }
 };
 
@@ -88,3 +88,7 @@ class Solution
         reverse(arr.begin()+1, arr.end());
     }
 };
+
+
+
+
