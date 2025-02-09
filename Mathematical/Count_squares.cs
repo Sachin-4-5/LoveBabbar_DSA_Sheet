@@ -16,26 +16,26 @@ Solution in C#
 using System;
 namespace Demo
 {
-	class Program
+    class Program
+    {
+        public static int countSquares(int n)
 	{
-		public static int countSquares(int n)
-		{
-			int count=0;
-			for(long i=1; i<=n/2; i++)
-			{
-				if(i*i < n)
-					count++;
-			}
-			return count;
-		}
-		
-		public static void Main(string[] args)
-		{
-			int n = 9;
-			int res = countSquares(n);
-			Console.WriteLine(res);
-		}
+	    int count=0;
+	    for(long i=1; i<=n/2; i++)
+	    {
+	        if(i*i < n)
+		    count++;
+	    }
+	    return count;
 	}
+		
+	public static void Main(string[] args)
+	{
+	    int n = 9;
+	    int res = countSquares(n);
+	    Console.WriteLine(res);
+	}
+    }
 }
 
 
@@ -47,18 +47,23 @@ namespace Demo
 using System;
 namespace Demo
 {
-	class Program
+    class Program
+    {
+        public static int countSquares(int n)
 	{
-		public static int countSquares(int n)
-		{
-			return (int) Math.Sqrt(n);
-		}
-		
-		public static void Main(string[] args)
-		{
-			int n = 9;
-			int res = countSquares(n);
-			Console.WriteLine(res);
-		}
+	    return (int) Math.Sqrt(n);
 	}
+		
+	public static void Main(string[] args)
+	{
+	    int n = 9;
+	    int res = countSquares(n);
+	    Console.WriteLine(res);
+	}
+    }
 }
+
+
+
+
+
