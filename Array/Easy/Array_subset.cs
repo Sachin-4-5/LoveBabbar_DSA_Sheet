@@ -30,13 +30,13 @@ namespace Demo
                     mp[num] = 1;
             }
 
-			//print
-			/*
-			foreach (KeyValuePair<int, int> i in dict)
+	    //print
+	    /*
+	    foreach (KeyValuePair<int, int> i in dict)
             {
                 Console.WriteLine("Key: {0}, Value: {1}", i.Key, i.Value);
             }
-			*/
+	    */
 			
             // Check each element in 'b'
             foreach (int num in b)
