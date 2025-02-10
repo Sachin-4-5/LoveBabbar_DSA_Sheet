@@ -17,6 +17,7 @@ namespace Demo
 {
     class Program
     {
+        //Logic for reversing a number.
         public bool isPalindrome(int num)
         {
             int temp = num;
