@@ -58,7 +58,7 @@ namespace demo
         public static int findPosition(int n)
         {
             if (n == 0 || (n & (n - 1)) != 0)
-				return -1;
+		return -1;
             return (int)Math.Log(n, 2) + 1;
         }
         
