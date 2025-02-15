@@ -16,25 +16,25 @@ Solution in C#
 using System;
 namespace Demo
 {
-	class Program
+    class Program
+    {
+	public static string reverseString(string input)
 	{
-		public static string reverseString(string input)
-		{
-			//Since string is immutable in C#
-			//First convert input string into char array
-			char[] charArr = input.ToCharArray();
-			Array.Reverse(charArr);
-			return new String(charArr);
-		}
-		
-		public static void Main(string[] args)
-		{
-			Console.Write("Input string: ");
-			string input = Console.ReadLine();
-			string output = reverseString(input);
-			Console.WriteLine("Output string: " + output);
-		}
+	    //Since string is immutable in C#
+	    //First convert input string into char array
+	    char[] charArr = input.ToCharArray();
+	    Array.Reverse(charArr);
+	    return new String(charArr);
 	}
+		
+	public static void Main(string[] args)
+	{
+	    Console.Write("Input string: ");
+	    string input = Console.ReadLine();
+	    string output = reverseString(input);
+	    Console.WriteLine("Output string: " + output);
+	}
+    }
 }
 
 
@@ -47,21 +47,17 @@ namespace Demo
 
 /**************************************************
 Solution in C++
-Approach:
-	1. by creating new string and iterating thru it.
-	2. in-place reversal.
 **************************************************/
 
-
-//Soltuion-1:
+//Soltuion-1: by creating new string and iterating thru it.
 class Solution 
 {
     public:
     string reverseString(string& s) 
     {
         //Code here
-		//Since, string is mutable in C++
-        string res;		//Extra space
+	//Since, string is mutable in C++
+        string res;  //Extra space
         for(int i=s.length()-1; i>=0; i--) {
             res += s[i];
         }
@@ -73,7 +69,7 @@ class Solution
 
 
 
-//Solution-2:
+//Solution-2: in-place reversal.
 string reverseString(string& s)
 {
     //code here
@@ -90,3 +86,9 @@ string reverseString(string& s)
     }
     return s;
 };
+
+
+
+
+
+
